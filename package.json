@@ -1,0 +1,17 @@
+{
+  "name": "starter",
+  "version": "1.0.0",
+  "description": "landing page for pratice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo && exit 1",
+    "complie:sass": "sass sass/main.scss css/style.css -w"
+  },
+  "author": "kulveer",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.7.1",
+    "live-server": "^1.2.2",
+    "sass": "^1.90.0"
+  }
+}

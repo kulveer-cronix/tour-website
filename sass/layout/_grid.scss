@@ -1,0 +1,43 @@
+.row{
+    max-width: 114rem;
+    background-color: $color-grey-light-1;
+    margin: 0 auto;
+    display: grid;
+    position: relative;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit,minmax($grid-col-2,auto));
+}
+
+.grid-col-4{
+    max-width: 114rem;
+    // background-color: $color-grey-light-1;
+    margin: 0 auto;
+    display: grid;
+
+    gap: 2rem;
+    row-gap: 5rem;
+    grid-template-columns:repeat(auto-fit,minmax(250px,auto)) ;
+}
+.grid-col-2{
+    max-width: 114rem;
+    // background-color: $color-grey-light-1;
+    margin: 0 auto;
+    display: grid;
+
+    gap: 2rem;
+    row-gap: 5rem;
+    grid-template-columns:repeat(auto-fit,minmax(300px,auto)) ;
+}
+.text-about{
+   @include responed(tab){
+  width: 50rem;
+  margin: 2rem auto;
+
+   }
+}
+@media screen and (max-width:568px) {
+    .row{
+ grid-template-columns: repeat(auto-fit,minmax($grid-col-mc,auto));
+    }
+    
+}

@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+
+    padding: 3rem 0;
+    
+   
+}
+html{
+    //this defines what rem is
+    font-size: 62.5%;
+  
+    @include responed(desktop){
+        font-size: 80%;        
+    }
+    @include responed(laptop){
+      font-size: 70%;      
+    }
+    @include responed(tab){
+       font-size: 45%;
+   }
+   @include responed(phone){
+        font-size: 35%;
+        }
+     @include responed(phone-s){
+        font-size: 27%;
+    }  
+   
+}

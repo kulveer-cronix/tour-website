@@ -1,0 +1,12 @@
+.bg-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
+    opacity: .15;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    z-index: -1;
+
+}

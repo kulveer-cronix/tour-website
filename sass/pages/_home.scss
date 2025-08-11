@@ -1,0 +1,98 @@
+.section-about{
+    background-color: $color-grey-light-1;
+    padding: 25rem 0;
+    margin-top: -20vh;
+  
+    @include responed(tab){
+      padding: 14rem 0;
+   }
+   @include responed(phone){
+       padding: 20rem 0;
+        }
+     @include responed(phone-s){
+       padding: 25rem 0;
+    }  
+}
+
+.section-features{
+padding: 15rem 0;
+margin-top: -20vh;
+background:linear-gradient(rgba($color-primary-light,0.8),rgba($color-primary-dark,0.8)), url(../../img/nat-4.jpg);
+
+background-size: cover;
+background-position: top;
+clip-path: polygon(0 10% , 100%  0,100% 90%,0 100% );
+    @include responed(laptop){
+// clip-path: polygon(0 5% , 100%  0,100% 95%,0 100% );
+margin-top: 25rem;
+// padding: 15rem 0;
+
+   }
+    @include responed(tab){
+clip-path: polygon(0 5% , 100%  0,100% 95%,0 100% );
+margin-top: 39rem;
+padding: 15rem 0;
+
+   }
+   @include responed(phone){
+margin-top: 15rem;
+     }
+     @include responed(phone-s){
+    clip-path: polygon(0 2% , 100%  0,100% 98%,0 100% );
+
+    }  
+& .col-3{
+    height: 35rem;
+    width:250px;
+    margin: 0 auto;
+    margin-block: 8rem;
+    @include responed(phone){
+margin-block: 2rem;
+        }
+}
+}
+.section-story{
+    padding: 5rem 0;
+    // background-color: $color-grey-light-1;
+position: relative;
+}
+.section-booking{
+    padding: 5rem;
+    background:linear-gradient($color-primary-light, $color-primary-dark);
+}
+.book{
+    background:linear-gradient(105deg,
+    rgba($color-white , .9)0%,
+    rgba($color-white, .9) 50%,
+    transparent 50%),
+     url(../../img/nat-10.jpg) no-repeat;
+    background-size: 100% 100%;
+ 
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black,.15);
+    @include responed(tab){
+       background:linear-gradient(105deg,
+    rgba($color-white , .9)0%,
+    rgba($color-white, .9) 70%,
+    transparent 70%),
+     url(../../img/nat-10.jpg) no-repeat;
+   
+    }
+    @include responed(phone){    
+ background:linear-gradient(105deg,
+    rgba($color-white , .9) 0%,
+    rgba($color-white, .9) 100%),
+     url(../../img/nat-10.jpg) no-repeat;
+   
+    }
+    &__form{
+        width: 50%;
+        padding: 6rem;
+        @include responed(tab){
+            width: 80%;
+        }
+         @include responed(phone){
+            width: 100%;
+        }
+    }
+}
